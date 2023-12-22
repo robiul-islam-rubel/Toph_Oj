@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstdlib>
+#include<iomanip>
+using namespace std;
+int main()
+{
+  int a,b;
+  cin>>a>>b;
+  float m;
+  m=(float)abs(11*b-60*a);
+  float n=m/2;
+  if(n>360||n>180)
+  {
+      n=360-n;
+  }
+  cout<<fixed<<setprecision(7)<<n;
+
+    return 0;
+}
