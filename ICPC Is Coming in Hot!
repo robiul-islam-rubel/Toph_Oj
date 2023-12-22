@@ -1,0 +1,1 @@
+x=input();print(max(x,key=x.count))
