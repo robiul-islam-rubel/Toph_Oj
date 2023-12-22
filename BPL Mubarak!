@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    string s;
+    int t;
+    cin>>t;
+    while(t--){
+    cin>>s;
+    int k=0,c=0;
+    for(int i=0;i<s.size();i++)
+    {
+        if(s[i]=='1'||s[i]=='2'||s[i]=='3'||s[i]=='4'||s[i]=='5'||s[i]=='6'||s[i]=='0'||s[i]=='O')
+        {
+            k++;
+        }
+    }
+    ///cout<<k<<endl;
+    if(k==1)
+    {
+        cout<<k<<" "<<"BALL"<<endl;
+    }
+    else if(k<6)
+    {
+        cout<<k<<" "<<"BALLS"<<endl;
+    }
+   else if(k==6)
+    {
+        cout<<"1"<<" "<<"OVER"<<endl;
+    }
+    while(k>=6)
+    {
+        k-=6;
+        c++;
+    }
+    if(c==1&&k>1)
+    {
+        cout<<"1"<<" "<<"OVER"<<" "<<k<<" "<<"BALLS"<<endl;
+    }
+    else if(k==0&&c!=1)
+    {
+        cout<<c<<" "<<"OVERS"<<endl;
+    }
+   else if(c==1&&k==1)
+    {
+        cout<<c<<" "<<"OVER"<<" "<<k<<" "<<"BALL"<<endl;
+        ///cout<<"HI"<<endl;
+    }
+    else if(c>1)
+    {
+        if(k>1)
+        {
+            cout<<c<<" "<<"OVERS"<<" "<<k<<" "<<"BALLS"<<endl;
+        }
+        else
+        {
+            cout<<c<<" "<<"OVERS"<<" "<<k<<" "<<"BALL"<<endl;
+        }
+    }
+
+
+
+    }
+    return 0;
+}
