@@ -1,0 +1,41 @@
+#include<iostream>
+#include<cstring>
+#include<cstdio>
+using namespace std;
+int main()
+{
+    string s;
+    getline(cin,s);
+   /// cout<<s<<endl;
+   int len=s.size();
+  /// cout<<len<<endl;
+   if(len<=3)
+   {
+       cout<<s<<endl;
+   }
+   else if(len==5)
+   {
+       cout<<s[0]<<s[1]<<","<<s[2]<<s[3]<<s[4];
+   }
+   else if(len==6)
+   {
+      cout<<s[0]<<s[1]<<s[2]<<","<<s[3]<<s[4]<<s[5];
+   }
+   else if(len==8)
+   {
+       cout<<s[0]<<s[1]<<","<<s[2]<<s[3]<<s[4]<<","<<s[5]<<s[6]<<s[7];
+   }
+   else if(len==9)
+   {
+       cout<<s[0]<<s[1]<<s[2]<<","<<s[3]<<s[4]<<s[5]<<","<<s[6]<<s[7]<<s[8];
+   }
+   else if(len==4)
+   {
+       cout<<s[0]<<","<<s[1]<<s[2]<<s[3];
+   }
+   else if(len==7)
+   {
+       cout<<s[0]<<","<<s[1]<<s[2]<<s[3]<<","<<s[4]<<s[5]<<s[6];
+   }
+    return 0;
+}
